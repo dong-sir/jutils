@@ -26,11 +26,9 @@ jutils - JavaScript常用函数库
 * [getBrowserInfo](#getBrowserInfo) 获取浏览器信息
 * [isCss3Support](#isCss3Support) 判断浏览器是否支持css3
 
-### 转换类
+### 日期
 
-* [reverseStr]() 字符串反转
-
-
+* [formatDate](#formatDate) 时间戳的转换（自定义格式）
 
 
 
@@ -51,4 +49,16 @@ jutils.getBrowserInfo();
 
 ```javascript
 jutils.isCss3Support() ? true : false
+```
+
+### formatDate
+
+时间戳的转换（自定义格式）
+
+> 年、月、日、时、分、秒
+
+```javascript
+var date = jutils.formatDate(new Date(1533686888*1000),"YYYY-MM-DD HH:ii:ss");
+console.log(date);
+// 2019-07-09 19:44:01
 ```
