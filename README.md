@@ -19,38 +19,36 @@ jutils - JavaScript常用函数库
 
 
 
-## API 
+## API 目录
 
-* 浏览器
-  * getBrowserInfo	获取浏览器信息
-  ```javascript
+### 浏览器
+
+* [getBrowserInfo](#getBrowserInfo) 获取浏览器信息
+* [isCss3Support](#isCss3Support) 判断浏览器是否支持css3
+
+### 转换类
+
+* [reverseStr]() 字符串反转
+
+
+
+
+
+## API 说明
+
+### getBrowserInfo
+
+获取浏览器信息
+
+```javascript
 jutils.getBrowserInfo();
 //{name: "Chrome", version: "76.0.3809.100"}
-  ```
-  * isCss3Support	判断是否支持css3
-  ``` javascript
+```
+
+### isCss3Support
+
+判断是否支持css3
+
+```javascript
 jutils.isCss3Support() ? true : false
-  ```
-  
-  
-  
-* 转换
-
-    * 字符串反转
-
-    ``` javascript
-    jutils.reverseStr("sj.slituj");
-    // jutils.js
-    ```
-
-
-
-
-
-## Questions?
-
-If you have any questions, please feel free to ask through [New Issue](https://github.com/dong-sir/jutils/issues/new).
-
-## License
-
-jutils.js is available under the terms of the [MIT License](./LICENSE).
+```
