@@ -29,6 +29,7 @@ jutils - JavaScript常用函数库
 ### 日期
 
 * [formatDate](#formatDate) 时间戳的转换（自定义格式）
+* [getTimeInterval](#getTimeInterval) 获取两个时间的间隔的天、小时、分钟和秒
 
 
 
@@ -62,3 +63,15 @@ var date = jutils.formatDate(new Date(1533686888*1000),"YYYY-MM-DD HH:ii:ss");
 console.log(date);
 // 2019-07-09 19:44:01
 ```
+
+### getTimeInterval
+
+获取两个时间的间隔，返回间隔的天、小时、分钟和秒。 注意：*结束时间要大于开始时间否则返回空*
+
+``` javascript
+jutils.getTimeInterval("开始时间", "结束时间");
+//例：
+jutils.getTimeInterval(1567562605000, 1567649014000)
+//1天0小时0分钟9秒
+```
+
