@@ -1,20 +1,43 @@
 # jutils
 
-jutils - JavaScript常用函数库
+[![LICENSE MIT](https://img.shields.io/npm/l/jutils.svg)](https://www.npmjs.com/package/jutils-src) 
+
+JavaScript常用函数库
 
 在日常工作生活中，会经常用到一些`日期格式化`，`url相关操作`，`浏览器类型判断`，`常用验证格式`等等函数，虽然大部分只需谷歌/百度一下就能找到，但是大多数都存在着一些问题，于是整理了网上和自己平常用到的工具类，方便大家以后的使用，提升开发效率。
 
 
 
-## 安装使用
+## 安装
 
-1. 直接下载jutils.min.js使用，支持UMD通用模块规范。
+### 直接用 <code><script></code> 引入
+
+直接下载并用 `<script>` 标签引入，`jutils` 会被注册为一个全局变量。
 
 ``` html
 <script src="jutils.min.js"></script>
 <script>
   var browser = jutils.getBrowserInfo()
 </script>
+```
+
+#### CDN
+
+你也可以这样使用最新版本：
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/jutils-src"></script>
+```
+
+
+
+### NPM
+
+NPM 能很好地和 webpack 模块打包器配合使用。
+
+``` bash
+# 最新稳定版
+$ npm install jutils-src
 ```
 
 
