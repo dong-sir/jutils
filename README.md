@@ -1,6 +1,14 @@
+<a href="https://github.com/dong-sir/jutils">
+<img src="./asset/jutils-logo.jpg" alt="logo">
+</a>
+
 # jutils
 
-[![LICENSE MIT](https://img.shields.io/npm/l/jutils.svg)](https://www.npmjs.com/package/jutils-src) 
+![npm](https://img.shields.io/npm/v/jutils-src) [![LICENSE MIT](https://img.shields.io/npm/l/jutils.svg)](https://www.npmjs.com/package/jutils-src)
+
+
+
+ 
 
 JavaScript常用函数库
 
