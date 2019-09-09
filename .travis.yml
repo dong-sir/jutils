@@ -9,7 +9,7 @@ branches:
     - dongsir
 before_deploy:
   - npm run build
-  - rm -rf ./src ./test ./script
+  - rm -rf ./src ./script
 deploy:
   provider: npm
   email: "$NPM_EMAIL"
