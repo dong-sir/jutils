@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "10"
+install:
+  - npm install
+branches:
+  only:
+    - master
+    - dongsir
+before_deploy:
+  - npm run build
+  - rm -rf ./src ./test ./script
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
+  skip_cleanup: true
+  on:
+    branch: dongsir
