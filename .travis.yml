@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - "10"
+install:
+  - npm install
+script:
+  - npm run test
+after_success:
+- cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
+- rm -rf ./coverage
+branches:
+  only:
+    - master
+    - dongsir
+before_deploy:
+  - npm run build
+  - rm -rf ./src ./test ./coverage ./script ./.babelrc
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
+  skip_cleanup: true
+  on:
+    branch: dongsir
