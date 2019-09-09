@@ -1,0 +1,42 @@
+{
+  "name": "jutils-src",
+  "realname": "jutils",
+  "version": "1.0.0-beta1",
+  "description": "JavaScript常用函数库",
+  "main": "dist/jutils.min.js",
+  "scripts": {
+  	"build": "node script/build.js",
+    "build-copy": "node script/build-copy.js",
+    "build-pack": "node script/build-pack",
+    "webpack": "webpack --config script/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dong-sir/jutils.git"
+  },
+  "keywords": [
+    "jutils",
+    "util",
+    "tool",
+    "common-util"
+  ],
+  "author": "dongsir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dong-sir/jutils/issues"
+  },
+  "homepage": "https://github.com/dong-sir/jutils#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "chalk": "^2.4.2",
+    "copy": "^0.3.2",
+    "ora": "^3.4.0",
+    "rimraf": "^3.0.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {}
+}
