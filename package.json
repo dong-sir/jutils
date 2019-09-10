@@ -1,14 +1,14 @@
 {
   "name": "jutils-src",
   "realname": "jutils",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "JavaScript常用函数库",
   "main": "dist/jutils.min.js",
   "scripts": {
   	"build": "node script/build.js",
     "build-copy": "node script/build-copy.js",
     "build-pack": "node script/build-pack",
-    "test": "node script/build-pack"
+    "test": "npm run build-pack"
   },
   "repository": {
     "type": "git",
