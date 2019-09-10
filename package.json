@@ -5,11 +5,10 @@
   "description": "JavaScript常用函数库",
   "main": "dist/jutils.min.js",
   "scripts": {
-  	"test": "echo \"Error: no test specified\" && exit 1",
   	"build": "node script/build.js",
     "build-copy": "node script/build-copy.js",
     "build-pack": "node script/build-pack",
-    "webpack": "webpack --config script/webpack.config.js"
+    "test": "npm run build-pack"
   },
   "repository": {
     "type": "git",
