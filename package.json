@@ -8,7 +8,7 @@
   	"build": "node script/build.js",
     "build-copy": "node script/build-copy.js",
     "build-pack": "node script/build-pack",
-    "test": "npm run build-pack"
+    "test": "node script/build-pack"
   },
   "repository": {
     "type": "git",
