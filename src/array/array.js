@@ -7,9 +7,9 @@ var array = {
      * [arrayUniq 简单数组去重]
      * @author dongsir
      * @DateTime 2019-09-04
-     * @version  [version]
-     * @param    {[type]}   arr [description]
-     * @return   {[type]}       [description]
+     * @version  1.1
+     * @param    {Array}   arr [带有重复数据的数组]
+     * @return   {Array}       [处理后的数组]
      */
     arrayUniq: function (arr) {
         var e, i, t = [],
