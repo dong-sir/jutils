@@ -12,11 +12,10 @@ var array = {
      * @return   {[type]}       [description]
      */
     arrayUniq: function (arr) {
-        var returnArr = [];
-        for (var i = 0, len = arr.length; i < len; i++) {
-            (("," + returnArr + ",").indexOf("," + arr[i] + ",") < 0) ? returnArr.push(arr[i]): '';
-        };
-        return returnArr;
+        var e, i, t = [],
+            a = {};
+        for (e = 0, i = arr.length; e < i; e++) a[arr[e]] || (t.push(arr[e]), a[arr[e]] = !0);
+        return t
     }
 
 }

@@ -55,6 +55,12 @@ $ npm install jutils-src
 * [getBrowserInfo](#getBrowserInfo) 获取浏览器信息
 * [isCss3Support](#isCss3Support) 判断浏览器是否支持css3
 
+### 数组
+
+* [arrayUniq](#arrayUniq) 高性能数组去重
+
+
+
 ### 日期
 
 * [formatDate](#formatDate) 时间戳的转换（自定义格式）
@@ -79,6 +85,15 @@ jutils.getBrowserInfo();
 
 ```javascript
 jutils.isCss3Support() ? true : false
+```
+
+### arrayUniq
+
+高性能数组去重
+
+``` javascript
+jutils.arrayUniq([0,1,2,2,3,4,4,5,6]);
+// [0, 1, 2, 3, 4, 5, 6]
 ```
 
 ### formatDate
