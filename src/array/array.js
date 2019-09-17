@@ -7,16 +7,15 @@ var array = {
      * [arrayUniq 简单数组去重]
      * @author dongsir
      * @DateTime 2019-09-04
-     * @version  [version]
-     * @param    {[type]}   arr [description]
-     * @return   {[type]}       [description]
+     * @version  1.1
+     * @param    {Array}   arr [带有重复数据的数组]
+     * @return   {Array}       [处理后的数组]
      */
     arrayUniq: function (arr) {
-        var returnArr = [];
-        for (var i = 0, len = arr.length; i < len; i++) {
-            (("," + returnArr + ",").indexOf("," + arr[i] + ",") < 0) ? returnArr.push(arr[i]): '';
-        };
-        return returnArr;
+        var e, i, t = [],
+            a = {};
+        for (e = 0, i = arr.length; e < i; e++) a[arr[e]] || (t.push(arr[e]), a[arr[e]] = !0);
+        return t
     }
 
 }
