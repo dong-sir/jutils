@@ -6,45 +6,6 @@ function addZero(v, size) {
 }
 var date = {
     /**
-     * [isDuringDate description]
-     * @author dongsir
-     * @DateTime 2019-08-21
-     * @version  [version]
-     * @param    {[type]}   beginDateStr [description]
-     * @param    {[type]}   endDateStr   [description]
-     * @return   {Boolean}               [description]
-     */
-    isDuringDate: function (beginDateStr, endDateStr) {
-        var curDate = new Date(),
-            beginDate = new Date(beginDateStr),
-            endDate = new Date(endDateStr);
-        if (curDate >= beginDate && curDate <= endDate) {
-            return true;
-        }
-        return false;
-    },
-    getDayType: function (time, needNoon) {
-        var timeArr = time.split('-'),
-            startArr = timeArr[0].split(':'),
-            endArr = timeArr[1].split(':'),
-            start = parseInt(startArr[0]),
-            end = parseInt(endArr[0]),
-            dayType = '';
-        if (start >= 0 && end <= 12) {
-            dayType = '上午';
-        }
-        if (start >= 12 && end <= 18) {
-            dayType = '下午';
-        }
-        if (start >= 18 && end <= 24) {
-            dayType = '晚间';
-        }
-        if (needNoon && start >= 11 && end <= 13) {
-            dayType = '中午';
-        }
-        return dayType;
-    },
-    /**
      * [getTimeInterval 获取两个时间的间隔]
      * @author dongsir
      * @DateTime 2019-09-05
