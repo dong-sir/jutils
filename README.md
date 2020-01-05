@@ -39,7 +39,7 @@ JavaScript常用函数库
 
 ### NPM
 
-NPM 能很好地和 webpack 模块打包器配合使用。
+在 jutils 应用于大型项目时推荐使用 NPM 安装。NPM 能很好地和 webpack 模块打包器配合使用。
 
 ``` bash
 # 最新稳定版
@@ -118,4 +118,3 @@ jutils.getTimeInterval("开始时间", "结束时间");
 jutils.getTimeInterval(1567562605000, 1567649014000)
 //1天0小时0分钟9秒
 ```
-

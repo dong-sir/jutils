@@ -3,6 +3,9 @@ node_js:
   - "8"
 install:
   - npm install
+cache:
+  directories:
+    - node_modules
 script:
   - npm run test
 branches:
