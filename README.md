@@ -1,7 +1,3 @@
-<a href="https://github.com/dong-sir/jutils">
-<img src="./asset/jutils-logo.jpg" alt="logo">
-</a>
-
 # jutils
 
 ![npm](https://img.shields.io/npm/v/jutils-src) [![Build Status](https://travis-ci.org/dong-sir/jutils.svg?branch=master)](https://travis-ci.org/dong-sir/jutils) [![LICENSE MIT](https://img.shields.io/npm/l/jutils.svg)](https://www.npmjs.com/package/jutils-src)
@@ -16,7 +12,7 @@ JavaScript常用函数库
 
 ## 安装
 
-### 直接用 <code><script></code> 引入
+### 直接用  <code style='color: #d63200'>&lt;script&gt;</code>  引入
 
 直接下载并用 `<script>` 标签引入，`jutils` 会被注册为一个全局变量。
 
@@ -63,7 +59,8 @@ $ npm install jutils-src
 
 ### 数组
 
-* [arrayUniq](#arrayUniq) 高性能数组去重
+* [arrayUnique](#arrayUnique) 数组去重
+* [arrayEqual](#arrayEqual) 判断两个数组是否相等
 
 
 
@@ -93,13 +90,22 @@ jutils.getBrowserInfo();
 jutils.isCss3Support() ? true : false
 ```
 
-### arrayUniq
+### arrayUnique
 
-高性能数组去重
+数组去重
 
 ``` javascript
-jutils.arrayUniq([0,1,2,2,3,4,4,5,6]);
-// [0, 1, 2, 3, 4, 5, 6]
+jutils.arrayUnique([2, 1, 2])
+// => [2, 1]
+```
+
+### arrayEqual
+
+判断两个数组是否相等
+
+``` javascript
+jutils.arrayEqual([0, 1],[1, 2]);
+// => false
 ```
 
 ### formatDate
