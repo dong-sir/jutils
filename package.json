@@ -20,7 +20,10 @@
     "tool",
     "common-util"
   ],
-  "author": "dongsir",
+  "author": {
+    "name": "dongsir",
+    "email": "790269286@qq.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dong-sir/jutils/issues"
