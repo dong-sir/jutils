@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>测</title>
+</head>
+<body>
+	<!-- <script src="https://cdn.bootcss.com/eruda/1.4.3/eruda.min.js"></script> -->
+	<!-- <script>eruda.init();</script> -->
+<script type="text/javascript" src="./dist/jutils.min.js"></script>
+<script type="text/javascript">
+
+	console.log(jutils);
+	// console.log('去重后的长度', jutils.arrayUnique([0,1,2,2,3,4,4,5,6]));
+	console.log(jutils.arrayEqual([3, 1],[3, 1]))
+	console.log("isWX",jutils.isWX())
+	console.log("getOsInfo()",jutils.getOsInfo())
+	console.log("getBrowserInfo()",jutils.getBrowserInfo())
+
+	// var date = jutils.formatDate(new Date(),"YYYY-MM-DD HH:ii:ss");
+	// var date = jutils.isDuringDate('2017/10/26', '2019/9/17 15:00');
+	var date = jutils.isDuringDate('2018-09-17 13:00', '2030-09-17 15:00');
+	// var date = jutils.formatDate(new Date(),"YYYY-MM-DD HH:ii:ss");
+	console.log(date);
+	console.log(jutils.getTimeInterval(1567562605000, 1567649014000));
+</script>
+<script>
+// isDuringDate('2017/10/26', '2017/10/27 18:00')
+// pu.isDuringDate('2016/02/27 15:00:00', '2018/12/25 23:59:59')
+</script>
+</body>
+</html>

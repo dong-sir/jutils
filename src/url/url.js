@@ -26,6 +26,18 @@ var url = {
             r = u.substr(u.indexOf("\?") + 1).match(reg);
         return r != null ? r[2] : "";
     },
+    urlSearchParams: function urlSearchParams(search) {
+        var queryString = search || "undefined" != typeof location && location.search;
+        if (!queryString)
+            return {};
+        queryString = (queryString = queryString.trim().replace(/^(\?)/, "")).split("&");
+        var query = {};
+        return queryString.forEach(function(q) {
+            var segment = q.split("=");
+            query[segment[0]] = !(1 < segment.length) || segment[1]
+        }),
+        query
+    },
     getHash: function (name) {
         var u = arguments[1] || location.hash;
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
@@ -60,10 +72,10 @@ var url = {
      * @author dongsir
      * @DateTime 2019-09-10
      * @version  [version]
-     * @param    {[type]}   url      [description]
-     * @param    {Function} callback [description]
-     * @param    {[type]}   charset  [description]
-     * @return   {[type]}            [description]
+     * @param    {string}   url      [js地址]
+     * @param    {Function} callback [回调函数]
+     * @param    {string}   charset  [编码]
+     * @return   null
      */
     loadonJS: function (url, callback, charset) {
         if (typeof callback == 'string') {

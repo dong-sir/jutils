@@ -8,7 +8,9 @@
     "build": "node script/build.js",
     "build-copy": "node script/build-copy.js",
     "build-pack": "node script/build-pack",
-    "test": "npm run build-pack"
+    "test": "npm run build-pack",
+    "lint": "eslint src",
+    "lint:create": "eslint --init"
   },
   "repository": {
     "type": "git",
@@ -35,11 +37,12 @@
     "babel-preset-env": "^1.7.0",
     "chalk": "^2.4.2",
     "copy": "^0.3.2",
+    "eslint": "^7.12.1",
     "ora": "^3.4.0",
     "rimraf": "^3.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {}
 }
